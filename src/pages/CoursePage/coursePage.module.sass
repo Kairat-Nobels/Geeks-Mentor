@@ -1,0 +1,44 @@
+.page
+    min-height: 300px
+    .AllMentors
+        display: flex
+        justify-content: start
+        a
+            margin-top: 30px
+            display: flex
+            gap: 9px
+            align-items: center
+            &:hover p
+                border-bottom: 2px solid #262523
+            p
+                font-weight: 500
+                font-size: 16px
+                line-height: 19px
+                color: #262523
+            img
+                transform: rotate(180deg)
+                width: 20px
+                height: 20px
+
+    .cards
+        display: flex
+        flex-wrap: wrap
+        gap: 40px 16px
+        margin-top: 40px
+        @media (max-width: 970px)
+            justify-content: space-evenly
+        @media (max-width: 460px)
+            margin-top: 20px
+            gap: 20px
+        h3
+            margin-top: 80px
+            font-weight: 600
+            text-align: center
+            width: 100%
+            font-size: 26px
+            line-height: 30px
+            color: #262523
+            span
+                color: #343333
+                font-weight: 700
+                font-size: 30px

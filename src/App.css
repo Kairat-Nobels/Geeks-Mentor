@@ -1,0 +1,57 @@
+/* #root {
+  max-width: 1240px;
+  margin: 0 auto;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.App {
+  margin: 0 auto;
+}
+
+.window {
+  z-index: 11;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.outlet {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.pincode-input-container .pincode-input-text {
+  border: none !important;
+  margin: 0 8px !important;
+  width: 40px !important;
+  height: 46px !important;
+  border-bottom: 2px solid #262523 !important;
+}
+
+.pincode-input-container .pincode-input-text::placeholder {
+  opacity: 0.3 !important;
+}
+
+@media (max-width: 1320px) {
+
+  .container,
+  .outlet {
+    padding: 0 15px;
+    width: 100%;
+  }
+}

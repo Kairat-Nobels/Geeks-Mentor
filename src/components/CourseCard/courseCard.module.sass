@@ -1,0 +1,40 @@
+.courseCard
+    width: 240px
+    height: 100px
+    padding: 0 8px 0 16px
+    border-radius: 10px
+    background: #262523
+    box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.1)
+    @media (max-width: 460px)
+        padding: 12px 8px
+        display: flex
+        flex-direction: column
+        width: 120px
+        height: auto
+        align-items: center
+    &:disabled
+        background: #F8F7F7
+        box-shadow: none
+        cursor: auto
+.cardInner
+    display: flex
+    align-items: center
+    font-style: normal
+    gap: 16px
+    @media (max-width: 460px)
+        flex-direction: column
+    .figmaLogo
+        flex: 0 0 40px
+        @media (max-width: 460px)
+            width: 32px
+        img
+            width: 100%
+    .actions
+        color: #FFFFFF
+        h4
+            font-weight: 600
+            font-size: 22px
+            text-align: left
+            @media (max-width: 460px)
+                font-size: 12px
+                line-height: 16px

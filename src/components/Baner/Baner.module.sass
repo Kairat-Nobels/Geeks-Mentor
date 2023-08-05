@@ -1,0 +1,86 @@
+.Baner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 20px
+    @media (max-width: 900px)
+        flex-direction: column-reverse
+
+    .left
+        flex: 0 0 436px
+        color: #262523
+        @media (max-width: 560px)
+            flex: auto
+
+        h2
+            margin: 0
+            font-weight: 500
+            font-size: 26px
+            line-height: 33px
+            color: #262523
+            @media (max-width: 460px)
+                font-size: 20px
+                line-height: 26px
+        ul
+            margin-top: 32px
+            display: flex
+            flex-direction: column
+            gap: 24px
+            @media (max-width: 460px)
+                margin-top: 24px
+                gap: 16px
+            li
+                display: flex
+                flex-direction: column
+                gap: 16px
+                @media (max-width: 460px)
+                    gap: 8px
+                p
+                    color: #262523
+                    font-size: 16px
+                    @media (max-width: 460px)
+                        font-size: 14px
+                .list
+                    display: flex
+                    align-items: center
+                    gap: 18px
+                    img
+                        width: 20px
+                        height: 20px
+                    h3
+                        font-weight: 500
+                        font-size: 20px
+                        line-height: 24px
+                        @media (max-width: 460px)
+                            font-size: 16px
+                            line-height: 20px
+
+        .searchMentor
+            margin-top: 40px
+            display: block
+            div
+                background: #FFE600
+                border-radius: 8px
+                width: 200px
+                display: flex
+                align-items: center
+                justify-content: center
+                gap: 10px
+                padding: 10px 0
+                h3
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 19px
+                    color: #262523
+
+                img
+                    width: 20px
+                    height: 20px
+
+    .right
+        max-width: 715px
+        .banerImage
+            width: 100%
+            img
+                width: 100%
+                border-radius: 10px

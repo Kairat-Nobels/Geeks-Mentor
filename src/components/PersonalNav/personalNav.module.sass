@@ -1,0 +1,69 @@
+.wrapper
+    width: 135px
+    height: 120px
+    position: absolute
+    left: 75px
+    top: 167px
+    margin-left: 40px
+    @media (max-width: 1450px)
+        margin-left: 0
+    @media (max-width: 1350px)
+        left: 35px
+    @media (max-width: 1300px)
+        left: 25px
+    @media (max-width: 1200px)
+        top: 156px
+    @media (max-width: 1100px)
+        top: 136px
+    @media (max-width: 900px)
+        top: 126px
+    @media (max-width: 860px)
+        top: 96px
+        height: auto
+        left: 2%
+        display: flex
+        width: 90%
+    .wrapperList
+        width: 100%
+        height: 100%
+        list-style: none
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media (max-width: 860px)
+            flex-direction: row
+            justify-content: space-around
+            gap: 50px
+        & li
+            width: 100%
+            height: 28%
+            font-weight: 500
+            @media (max-width: 860px)
+                width: auto
+                height: auto
+            &:last-child
+                @media (max-width: 860px)
+                    display: none
+            & a
+                display: flex
+                align-items: center
+                cursor: pointer
+                color: #929291
+                @media (max-width: 860px)
+                    padding: 10px
+                img
+                    @media (max-width: 860px)
+                        display: none
+                & p
+                    margin-left: 5px
+                    font-size: 16px
+                    line-height: 19.09px
+                    @media (max-width: 860px)
+                        font-weight: 500
+                        font-size: 20px
+            .logOut
+                color: #A52020
+            .active
+                color: #262523
+            .idle
+                color: #929291

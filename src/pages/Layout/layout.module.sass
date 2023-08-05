@@ -1,0 +1,253 @@
+.wrap
+    background: #FFFFFF
+    font-family: "SF Pro Text"
+.menu
+    position: sticky
+    background: #fff
+    width: 100%
+    z-index: 11
+    top: 0
+    border-bottom: 2px solid #F5F6F6
+.navbar
+    display: flex
+    padding-top: 20px
+    padding-bottom: 10px
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    gap: 10px
+    ul
+        .aboutUs
+            width: 90px
+            @media (max-width: 930px)
+                width: 69px
+    .favorites
+        position: relative
+        width: 35px
+        margin-top: 7px
+        margin-right: 10px
+        img
+            width: 100%
+        p
+            position: absolute
+            padding: 5px
+            border-radius: 50%
+            top: -13px
+            right: -9px
+            background: #FFE600
+            color: #262523
+            line-height: 20px
+            font-size: 16px
+            width: 30px
+            height: 30px
+            text-align: center
+            font-weight: 600
+
+    .burgerImg
+        display: none
+        @media (max-width: 860px)
+            display: block
+    .logo
+        height: 28px
+        @media (max-width: 1100px)
+            height: 24px
+        @media (max-width: 1050px)
+            display: none
+        img
+            height: 100%
+    ul
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 20px
+        @media (max-width: 1100px)
+            gap: 10px
+        @media (max-width: 880px)
+            display: none
+        li a
+            padding: 12px 20px
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #262523
+            transition: .37s
+            display: inline-block
+            @media (max-width: 1100px)
+                padding: 8px 12px
+
+            &:hover
+                transform: scale(1.02)
+                font-weight: 600
+            &:hover::after
+                transition: .37s
+                position: absolute
+                top: 35px
+                content: ''
+                height: 3px
+                border-radius: 5px
+                left: 10%
+                width: 80%
+                background: #FFE600
+
+        .active
+            font-size: 16px
+            font-weight: 600
+            color: #FFE600
+            position: relative
+            &:hover
+                transform: none
+            &:hover::after
+                display: none
+    .allAva
+        display: flex
+        align-items: center
+        gap: 8px
+    .profile
+        padding: 5px
+        position: relative
+        @media (max-width: 1100px)
+            gap: 5px
+        &:hover .popUp
+            display: flex
+        h3
+            cursor: pointer
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px
+            color: #262523
+            @media (max-width: 1200px)
+                display: none
+        .ava
+            cursor: pointer
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            overflow: hidden
+            img
+                width: 100%
+
+    .popUp
+        position: absolute
+        right: 0
+        top: 45px
+        width: 180px
+        height: 114px
+        background: #FFFFFF
+        box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.15)
+        border-radius: 8px
+        padding: 16px
+        display: none
+        flex-direction: column
+        align-items: center
+        gap: 24px
+
+        .room
+            display: flex
+            justify-content: center
+            gap: 8px
+            align-items: center
+            p
+                font-weight: 500
+                font-size: 14px
+                line-height: 19px
+                color: #262523
+            .image
+                width: 16px
+                height: 16px
+                img
+                    width: 100%
+        .logOut
+            width: 144px
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 10px
+            height: 40px
+            background: #262523
+            border-radius: 8px
+            img
+                width: 16px
+                height: 16px
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                color: #FFFFFF
+
+// burger
+.wrapperBurger
+    display: none
+    @media (max-width: 880px)
+        display: block
+        width: 100%
+        height: 100%
+        position: fixed
+        top: 0
+        left: 0
+.burger
+    display: none
+    @media (max-width: 880px)
+        display: flex
+        justify-content: center
+        width: 85%
+        height: 100%
+        position: fixed
+        background: #000000
+        top: 0
+        left: 0
+        z-index: 12
+        animation: anime .7s ease-in-out
+    &Content
+        max-width: 420px
+        margin-top: 160px
+        ul
+            display: flex
+            flex-direction: column
+            gap: 30px
+            list-style-type: none
+            align-items: center
+            li a
+                color: #fff
+                font-size: 18px
+                font-weight: 600
+                transition: .37s
+                line-height: 22px
+                display: inline-block
+                padding: 5px 10px
+                &:hover
+                    transform: scale(1.02)
+                    font-weight: 600
+                &:hover::after
+                    transition: .37s
+                    position: absolute
+                    top: 35px
+                    content: ''
+                    height: 3px
+                    border-radius: 5px
+                    left: 10%
+                    width: 80%
+                    background: #FFE600
+
+            .active
+                font-size: 20px
+                font-weight: 600
+                color: #FFE600
+                position: relative
+                &:hover
+                    transform: none
+                &:hover::after
+                    display: none
+
+    &Btn
+        position: absolute
+        top: 20px
+        right: 20px
+        width: 30px
+        img
+            width: 100%
+@keyframes anime
+    from
+        width: 0
+    to
+        width: 85%

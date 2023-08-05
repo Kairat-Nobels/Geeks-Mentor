@@ -1,0 +1,104 @@
+.mentorCard
+    width: 300px
+    background: #EEEEEE
+    border-radius: 10px
+    @media (max-width: 630px)
+        transform: scale(0.85)
+    @media (max-width: 460px)
+        transform: scale(0.94)
+    .mentorImage
+        border-radius: 10px 10px 0px 0px
+        height: 220px
+        width: 300px
+        position: relative
+        overflow: hidden
+        & > div
+            position: absolute
+            left: 18px
+            top: 26px
+            width: 20px
+            img
+                width: 100%
+        img
+            width: 100%
+
+.mentorCardContent
+    font-family: 'SF Pro Text'
+    padding: 16px
+    padding-bottom: 10px
+    width: 100%
+    color: #262523
+
+    h4
+        font-weight: 500
+        font-size: 24px
+        line-height: 29px
+
+    span
+        display: inline-block
+        margin-top: 6px
+        font-weight: 400
+        font-size: 18px
+        line-height: 21px
+
+    .reiting
+        margin-top: 16px
+        display: flex
+        align-items: center
+        gap: 12px
+        .favoriteBtn
+            margin-left: auto
+            padding: 5px
+            svg
+                width: 30px
+                height: 30px
+        .thumbs
+            display: flex
+            gap: 5px
+            align-items: center
+            img
+                width: 20px
+                height: 20px
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+    .ul
+        margin-top: 14px
+        display: flex
+        flex-wrap: wrap
+        gap: 6px
+        li
+            padding: 4px 6px
+            background: #D9D9D9
+            border-radius: 100px
+            font-weight: 500
+            font-size: 14px
+            line-height: 17px
+    .actions
+        margin-top: 16px
+        display: flex
+        justify-content: space-between
+        gap: 8px
+        .button
+            color: #262523
+            background: #F5F6F6
+            border-radius: 10px
+            padding: 11px 24px
+            font-weight: 400
+            font-size: 14px
+            border-radius: 10px
+            line-height: 17px
+            &:hover
+                background: #EBEBEB
+        a > div
+            padding: 8px 20px
+            background: #F5F6F6
+            border-radius: 10px
+            &:hover img
+                transform: scale(1.4) rotate(360deg)
+            img
+                transition: .4s
+
+                width: 24px
+                height: 24px

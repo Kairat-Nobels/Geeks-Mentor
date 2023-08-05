@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #262523;
+  background: #FFE600;
+  border-radius: 8px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+}
+.button:disabled {
+  cursor: not-allowed;
+}
+.button:hover {
+  background: #E2CC00;
+  outline: none;
+  border: none;
+}

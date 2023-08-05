@@ -1,0 +1,163 @@
+.window
+    position: fixed
+    background: #00000055
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .content
+        flex: 0 1 512px
+        background: #FFFFFF
+        box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.15)
+        border-radius: 20px
+        padding: 32px
+        padding-bottom: 24px
+        position: relative
+        gap: 40px
+        @media (max-width: 540px)
+            margin: 0 20px
+            padding: 20px 15px
+        .contacts
+            margin-top: 32px
+            h3
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 22px
+                color: #000000
+            input
+                background: #F5F6F6
+                border-radius: 6px
+                padding: 5px 16px
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: #2254B5
+                margin-top: 16px
+                border: none
+                outline: none
+                width: 100%
+        .image
+            width: 300px
+            img
+                width: 100%
+        h2
+            font-weight: 600
+            font-size: 16px
+            line-height: 19px
+            color: #000000
+            @media (max-width: 390px)
+                width: 90%
+
+        .flex
+            margin-top: 32px
+            margin-bottom: 48px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @media (max-width: 520px)
+                flex-wrap: wrap
+                gap: 20px
+            .line
+                background: #F5F6F6
+                width: 1px
+                border-radius: 4px
+                height: 65px
+                border: 1px solid #F5F6F6
+        .timeBlock
+            h3
+                font-weight: 500
+                font-size: 14px
+                line-height: 22px
+                color: #000000
+
+            .days
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-top: 11px
+                gap: 32px
+                .resetTime
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    gap: 16px
+                    p
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 22px
+                        color: #000000
+
+            .inputWrapper
+                background: #F5F6F6
+                height: 34px
+                border-radius: 6px
+                width: 53px
+                overflow: hidden
+
+            input
+                margin-left: 6px
+                margin-top: 5px
+                border: none
+                appearance: none
+                background: #F5F6F6
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: #262523
+
+        .limit
+            margin-top: 8px
+            font-weight: 500
+            font-size: 14px
+            line-height: 22px
+            color: #262523
+        .btn
+            position: absolute
+            cursor: pointer
+            width: 24px
+            height: 24px
+            top: 32px
+            right: 32px
+            @media (max-width: 540px)
+                top: 24px
+                right: 24px
+            @media (max-width: 460px)
+                right: 18px
+                top: 18px
+            img
+                width: 100%
+
+        .downActions
+            display: flex
+            justify-content: flex-end
+            margin: 32px auto 0
+            @media (max-width: 540px)
+                justify-content: space-around
+            .cancel
+                width: 97px
+                height: 40px
+                margin-right: 20px
+                background-color: #fff
+                font-size: 14px
+                line-height: 17px
+                font-weight: 600
+                border-radius: 10px
+                cursor: pointer
+                border: none
+            .save
+                padding: 11px 23px
+                background-color: #FFE600
+                font-size: 14px
+                line-height: 17px
+                font-weight: 600
+                border-radius: 10px
+                cursor: pointer
+                border: none
+                &:hover
+                    color: #262523
+                    background-color: #E2CC00
